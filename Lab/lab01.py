@@ -9,7 +9,18 @@ def warmup(a,b):
     else:
         return a*b
 
-
+def ex2(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+        
 def fibonacci():
     n = int(input('Insert a number: '))
     liston = [0,1]
@@ -53,7 +64,10 @@ def ex7(liston):
     for n in range(0, len(liston),2):
         print(liston[n])
 
-ex7([3,2,4,5])
+
+print(ex2(21004))
+
+#ex7([3,2,4,5])
 #print(pantry())
 
 
